@@ -70,25 +70,12 @@ body {
     repeating-linear-gradient(
       45deg,
       rgb(var(--r, 0), var(--g, 0), var(--b, 0)) 1px 2px,
-      transparent 2px 3.42px
-    ),
-    repeating-linear-gradient(
-      -45deg,
-      black 1px 3px,
-      transparent 3px 3.82px
-    ),
-    repeating-linear-gradient(
-      90deg,
-      black 1px 3px,
-      transparent 3px 3.82px
-    ),
-    repeating-linear-gradient(
-      black 1px 3px,
-      transparent 3px 3.82px
+      transparent 2px 4px
     );
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-color: black;
 }
 
 .bigCard:hover {
