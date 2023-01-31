@@ -7,8 +7,8 @@ const handleMouseMove = (e) => {
   const halfWidth = 176;
   const halfHeight = 264;
 
-  const x = (offsetX - halfWidth) / 14;
-  const y = (offsetY - halfHeight) / -14;
+  const x = (offsetX - halfWidth) / -14;
+  const y = (offsetY - halfHeight) / 14;
 
   bigCard.style.setProperty("--rotateX", `${y.toFixed(2)}deg`);
   bigCard.style.setProperty("--rotateY", `${x.toFixed(2)}deg`);
@@ -38,16 +38,9 @@ const handleMouseMove = (e) => {
   }
 };
 
-const handleMouseLeave = (e) => {
-  middleSuite.style.setProperty("--r", 0);
-  middleSuite.style.setProperty("--g", 0);
-  middleSuite.style.setProperty("--b", 0);
-};
-
 const handleClick = (e) => {
   bigCard.classList.toggle("isFlipped");
 };
 
 bigCard.addEventListener("mousemove", handleMouseMove);
-bigCard.addEventListener("mouseleave", handleMouseLeave);
 bigCard.addEventListener("click", handleClick);

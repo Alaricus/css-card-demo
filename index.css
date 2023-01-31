@@ -15,7 +15,8 @@ body {
   user-select: none;
   --rotateX: 0deg;
   --rotateY: 0deg;
-  transition: transform 250ms ease;
+  --speed: 1s;
+  transition: transform var(--speed) ease;
   perspective: 1000px;
 }
 
@@ -66,12 +67,6 @@ body {
   font-family: serif;
   font-size: 15rem;
   text-align: center;
-  background-image:
-    repeating-linear-gradient(
-      45deg,
-      rgb(var(--r, 0), var(--g, 0), var(--b, 0)) 1px 2px,
-      transparent 2px 4px
-    );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -79,7 +74,16 @@ body {
 }
 
 .bigCard:hover {
+  --speed: 100ms;
   transform: perspective(1000px) rotateX(var(--rotateX)) rotateY(var(--rotateY));
+}
+
+.bigCard:hover .middleSuite {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgb(var(--r), var(--g), var(--b)) 1px 2px,
+    transparent 2px 4px
+  );
 }
 
 .innerBigCard {
