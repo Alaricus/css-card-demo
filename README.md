@@ -28,6 +28,7 @@ This is a companion demo to a CSS talk I gave.
 * `calc()`
 * `roateX()`
 * `roateY()`
+* `linear-gradient()`
 * `repeating-linear-gradient()`
 * `perspective()`
 * `var()`
