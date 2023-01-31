@@ -1,7 +1,7 @@
 # CSS Card Demo
 This is a companion demo to a CSS talk I gave.
 
-## Features
+## Demo Features
 * The card has a tiled weave back design
 * The card tilts in 3D when the mouse cursor is hovered over it
 * The card rotates when clicked
