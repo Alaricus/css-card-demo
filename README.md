@@ -1,4 +1,4 @@
-# CSS Talk Demos
+# CSS Talk Demo
 This is a companion demo to a CSS talk I gave.
 
 ## Demo Features
