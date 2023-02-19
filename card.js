@@ -1,5 +1,5 @@
-const bigCard = document.querySelector(".bigCard");
-const middleSuite = document.querySelector(".middleSuite");
+const card = document.querySelector(".card");
+const middleSuite = document.querySelector(".middle-suite");
 
 const handleMouseMove = (e) => {
   const { offsetX, offsetY } = e;
@@ -10,8 +10,8 @@ const handleMouseMove = (e) => {
   const x = (offsetX - halfWidth) / -14;
   const y = (offsetY - halfHeight) / 14;
 
-  bigCard.style.setProperty("--rotateX", `${y.toFixed(2)}deg`);
-  bigCard.style.setProperty("--rotateY", `${x.toFixed(2)}deg`);
+  card.style.setProperty("--rotateX", `${y.toFixed(2)}deg`);
+  card.style.setProperty("--rotateY", `${x.toFixed(2)}deg`);
 
   if (x > 0 && y > 0) {
     middleSuite.style.setProperty("--r", Math.abs(x * 21));
@@ -39,8 +39,8 @@ const handleMouseMove = (e) => {
 };
 
 const handleClick = (e) => {
-  bigCard.classList.toggle("isFlipped");
+  card.classList.toggle("is-flipped");
 };
 
-bigCard.addEventListener("mousemove", handleMouseMove);
-bigCard.addEventListener("click", handleClick);
+card.addEventListener("mousemove", handleMouseMove);
+card.addEventListener("click", handleClick);

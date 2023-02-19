@@ -1,32 +1,51 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>CSS Card Demo</title>
+    <title>CSS Talk Demos</title>
     <meta charset="UTF-8" />
     <link href="./index.css" rel="stylesheet" />
+    <link href="./card.css" rel="stylesheet" />
+    <link href="./die.css" rel="stylesheet" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎴</text></svg>" />
   </head>
 
   <body>
-    <h1>CSS Card Demo</h1>
-    <div class="bigCard isFlipped">
-      <div class="innerBigCard">
-        <div class="innerFront">
-          <div class="topSuite">
-            <div>A</div>
-            ♣
+    <h1>CSS Talk Demos</h1>
+
+    <div class="container">
+      <div class="card is-flipped">
+        <div class="inner-card">
+          <div class="inner-front">
+            <div class="top-suite">
+              <div>A</div>
+              ♣
+            </div>
+            <div class="middle-suite">♣</div>
+            <div class="bottom-suite">
+              <div>A</div>
+              ♣
+            </div>
           </div>
-          <div class="middleSuite">♣</div>
-          <div class="bottomSuite">
-            <div>A</div>
-            ♣
-          </div>
+          <div class="inner-back"></div>
         </div>
-        <div class="innerBack"></div>
+      </div>
+
+      <div class="die-box">
+        <div class="die">
+          <div class="face face-1"><img src="./svgs/die-1.svg" /></div>
+          <div class="face face-2"><img src="./svgs/die-2.svg" /></div>
+          <div class="face face-3"><img src="./svgs/die-3.svg" /></div>
+          <div class="face face-4"><img src="./svgs/die-4.svg" /></div>
+          <div class="face face-5"><img src="./svgs/die-5.svg" /></div>
+          <div class="face face-6"><img src="./svgs/die-6.svg" /></div>
+        </div>
       </div>
     </div>
-    <p>Hover over the card to make it tilt. Click on it to make it flip.</p>
 
-    <script src="./index.js"></script>
+    <p>Hover over the card to make it tilt. Click on it to make it flip.</p>
+    <p>Click on the die to throw it.</p>
+
+    <script src="./card.js"></script>
+    <script src="./die.js"></script>
   </body>
 </html>

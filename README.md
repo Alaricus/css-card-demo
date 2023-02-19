@@ -1,4 +1,4 @@
-# CSS Card Demo
+# CSS Talk Demos
 This is a companion demo to a CSS talk I gave.
 
 ## Demo Features
@@ -6,6 +6,7 @@ This is a companion demo to a CSS talk I gave.
 * The card tilts in 3D when the mouse cursor is hovered over it
 * The card rotates when clicked
 * The card's face has a "shiny foil" effect when tilted
+* The die roated in 3D when clicked
 
 ## CSS Features Used
 ### Selectors
@@ -28,6 +29,7 @@ This is a companion demo to a CSS talk I gave.
 * `calc()`
 * `roateX()`
 * `roateY()`
+* `translateZ()`
 * `linear-gradient()`
 * `repeating-linear-gradient()`
 * `perspective()`
