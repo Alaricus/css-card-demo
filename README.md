@@ -6,7 +6,7 @@ This is a [companion demo](https://alaricus.github.io/css-talk-demo/) to a CSS t
 * The card tilts in 3D when the mouse cursor is hovered over it
 * The card rotates when clicked
 * The card's face has a "shiny foil" effect when tilted
-* The die roated in 3D when clicked
+* The die roates in 3D when clicked
 
 ## CSS Features Used
 ### Selectors
