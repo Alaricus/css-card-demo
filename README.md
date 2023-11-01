@@ -1,5 +1,5 @@
 # CSS Talk Demo
-This is a companion demo to a CSS talk I gave.
+This is a [companion demo](https://alaricus.github.io/css-talk-demo/) to a CSS talk I gave.
 
 ## Demo Features
 * The card has a tiled weave back design
